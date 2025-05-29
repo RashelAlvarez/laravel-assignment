@@ -29,10 +29,25 @@ Aplicación backend de Laravel integrada con la API JSONPlaceholder, utilizando 
 ### Pasos a seguir
  
 - Clonar repositorio https://github.com/RashelAlvarez/laravel-assignment.git
+
+- Variables de entorno:
+
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=sail
+DB_PASSWORD=password
+
 - En la raiz del proyecto ejecutar el siguiente comando para levantar la aplicación en mi caso utilice la consola de Ubuntu:
 
 ```bash
    ./vendor/bin/sail up -d
+```
+- Ejecutar las migraciones: 
+
+```bash
+   vendor/bin/sail artisan migrate
 ```
 
 - FetchCommand: se obtiene listados de users, posts y comments. Luego se crean los registros en la base de datos
