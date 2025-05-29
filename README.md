@@ -26,7 +26,7 @@ Aplicación backend de Laravel integrada con la API JSONPlaceholder, utilizando 
 - VStudioCode como editor de código
 
 
-### Pasos a seguir
+## Pasos a seguir
  
 - Clonar repositorio https://github.com/RashelAlvarez/laravel-assignment.git
 
@@ -84,7 +84,7 @@ DB_PASSWORD=password
 ```
 
 
-### Views Blade
+## Views Blade
 
 - Listado de users y posts: http://localhost/users
 - Listado de posts y comments: http://localhost/posts
