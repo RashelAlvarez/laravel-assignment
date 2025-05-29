@@ -88,3 +88,4 @@ DB_PASSWORD=password
 
 - Listado de users y posts: http://localhost/users
 - Listado de posts y comments: http://localhost/posts
+- Descarga de archivo JSON: http://localhost/download-page
