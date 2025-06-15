@@ -72,6 +72,42 @@ DB_PASSWORD=password
     vendor/bin/sail artisan fetch:comments
 ```
 
+- Scheduled CRUD: tarea programada para ejecutarse cada minuto
+
+Ejecutar el siguiente comando para configurar la tarea programada en el cron:
+
+
+```bash
+    crontab -e
+```
+
+Agregar en el archivo la siguiente indicación:
+
+```bash
+    * * * * * cd <ruta-archivo> && vendor/bin/sail artisan schedule:run >> /dev/null 2>&1 
+```
+
+Confirmar si el servicio de cron esta activo usando el siguiene comando:
+
+```bash
+    sudo service cron status
+```
+
+Si el servicio no esta activo ejecutar:
+
+
+```bash
+   sudo service cron start
+```
+
+Para ejecutar las tareas programadas manualmente puede utilizar el comando:
+
+
+```bash
+    vendor/bin/sail artisan schedule:run
+```
+
+
 - Comando para ejecutar Queue Job
 
 ```bash
